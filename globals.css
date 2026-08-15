@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+body {
+  background: #F7F5EF;
+  color: #102C25;
+}
+
+::selection {
+  background: #E8A33D;
+  color: #0B1F1A;
+}
+
+@media print {
+  .no-print {
+    display: none !important;
+  }
+}
+
+.focus-ring:focus-visible {
+  outline: 2px solid #D98E1F;
+  outline-offset: 2px;
+}
